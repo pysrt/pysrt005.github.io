@@ -1,0 +1,907 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ececec;
+    font-size: 14px;
+    color: #000;
+    min-width: 320px;
+    font-family: 'opensans-regular';
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.btn-red{
+    text-decoration: none;
+    background-color: #d51e08;
+    color: #fff;
+}
+                                                                            /* header */
+.navbar-default .navbar-toggle{
+    background-color: #c3c3c3;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+    background-color: #c3c3c3;
+}
+
+.menu-top .navbar{
+    margin-bottom: 0;
+    background-color: #fff;
+    padding: 20px 0;
+    text-transform: uppercase;   
+}
+.navbar-default .navbar-nav > li > a{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    transition: background .3s;
+    font-family: 'opensans-regular';
+}
+.navbar-default .navbar-nav > li > a.btn-red{
+    padding: 5px 20px;
+    
+    background-color: #d51e08;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    transition: background 0.3s ease 0s;
+}
+
+.navbar-default .navbar-nav > li > a.btn-red:hover{
+    background-color: #ec4835;
+    transition: background 0.3s ease 0s;
+}
+
+.menu-top .container,
+.menu-top .navbar-collapse{
+    padding-left: 0;
+}
+.flag > img{
+    margin-right: 7px;
+    position: relative;
+    top: -1px;
+}
+.btn-red > img{
+    margin-right:10px;
+}
+
+                                                                    /*карусель*/
+
+.menu-carusel .item{
+    min-height: 600px;
+}
+.menu-carusel .bg-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.carousel.fade{
+    opacity: 1;
+}
+.carousel.fade .item{
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.carousel.fade .item.active{
+    opacity: 1;
+    transition: opacity 1s;
+    position: relative;
+    z-index: 2;
+}
+.menu-carusel .carousel-caption{
+    position: absolute;
+    left:0;
+    top: 190px;
+    
+}
+.menu-carusel .carousel-caption h2{
+    font-size: 48px;
+    font-family: 'opensans-bold';
+    margin-bottom: 20px;
+}
+.menu-carusel .carousel-caption p{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.menu-carusel .carousel-caption a{
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #d51e08;
+    color: #fff;
+    transition: background .3s;
+}
+.menu-carusel .carousel-caption{
+    height: 300px;
+    overflow: hidden;
+    left: -20%;
+}
+.menu-carusel .carousel-caption a:hover{
+    background-color: #ec4835;
+}
+.menu-carusel .container{
+    position: relative;
+}
+.menu-carusel .carousel-control{
+    z-index: 10px;
+}
+.carousel-indicators-wrap{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.carousel-indicators-wrap .carousel-indicators{
+    margin: 0;
+    position: relative;
+    left: 0;
+    bottom: -16px;
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    width: auto;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    padding: 6px 25px;   
+}
+.carousel-indicators-wrap .carousel-indicators li{
+    background-color: #d2d2d2;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+}
+.carousel-indicators-wrap .carousel-indicators li.active{
+    background-color: #a3a3a3;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    bottom: -1px;
+}
+
+                                                                /* главное меню */
+.main-menu{
+    position: absolute;
+    z-index: 30;
+    top: 30px;
+    width: 100%;
+}
+.main-menu .navbar-inverse{
+    background-color: transparent;
+    border: 0;
+}
+.main-menu-bg{
+    background-color: #000000;
+    border-radius: 3px;
+}
+.main-menu .navbar-brand > span{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    display:block;
+    font-family: "opensans-bold";
+    float: right;
+    padding: 11px;
+}
+.main-menu .navbar-brand{
+    padding: 0;
+}
+.main-menu .navbar-inverse .navbar-nav >li > a{
+    color: #fff;
+    font-size: 16px;
+}
+.main-menu .navbar-inverse .navbar-nav >li > a:hover{
+    text-decoration: underline;
+}
+.main-menu .navbar-brand > img{
+    float: left;
+}
+.main-menu .logo{
+    position: relative;
+    display: inline-block;
+    width: 111px;
+    height: 144px;
+    z-index: 38;
+}
+.main-menu .navbar-inverse .container .main-menu-bg .navbar-nav{
+    margin-left: 50px;
+}
+.main-menu .navbar .container .navbar-brand, .navbar .container-fluid .navbar-brand{
+    
+    margin-left: 30px;
+}
+.main-menu .input-group-btn .btn btn-default.glyphicon glyphicon-search{
+    font-size: 20px;
+}
+.navbar navbar-inverse .navbar-brand{
+    position: relative;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border: 0;
+}
+
+                                                                                    /* заголовок */
+
+.my-slogan{
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 3px solid #dadada;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.my-slogan h1{
+    font-size: 30px;
+    color: #000;
+    margin: 0;
+}
+
+                                                                                /*   сайдбар   */
+
+.sidebar{
+    padding: 50px 0 0 0;
+    border-right: 3px solid #dadada; 
+    
+}
+.widget{
+    
+    border-bottom: 3px solid #dadada;    
+}
+.widget h3,
+.content h3{
+    font-size: 24px;
+    font-family: 'opensans-bold';
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.content h3{
+    padding-left: 15px;
+}
+.widget{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.widget ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.widget ul > li > a {
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;  
+}
+
+.widget ul > li.more a{
+    color: #358acd;
+}
+.sidebar .carousel{
+    max-width: 225px;
+    margin-bottom: 25px;   
+}
+.sidebar .container{
+    display:block;
+    position: inherit;
+}
+.sidebar .carousel-caption{
+    position: static;
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
+}
+.sidebar .carousel-caption h4{
+    font-family: 'opensans-bold';
+    font-size: 14px;
+    padding: 30px 0;
+    margin: 0;
+}
+.sidebar .carousel-caption p{
+    font-size: 12px;
+    padding: 0 0 20px 0;
+}
+.sidebar .carousel-indicators{
+    bottom: 0;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #e1e1e1;
+}
+                                                       /* банер сайдбара*/
+.banner{
+    text-align: center;
+    background-color: #fff;
+    max-width: 225px;
+    text-transform: uppercase;
+}
+.banner img{
+    margin-bottom: 32px;
+}
+.banner h2{
+    margin: 0;
+    font-size: 28px;
+    color: black;
+    font-family: 'opensans-bold';
+}
+.banner h3{
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+.banner a{
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 30px 0;
+    background-color: #d51e08;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background 0.3s ease 0s;
+}
+.banner a:hover{
+    background-color: #e83b26;
+}
+                                                            /* about stor*/
+.about{
+    padding-right: 15px;
+}
+
+.about h3{
+    font-size: 24px;
+    font-family: 'opensans-bold';
+    margin-bottom: 20px;
+}
+.about p{
+    font-size: 14px;
+}
+.about p span{
+    color: #0a94b2;
+}
+                                                            /* content */
+.content{
+    padding: 50px 0 0 0;
+}
+.products{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    padding: 25px 15px;
+    text-align: center;
+    position: relative;
+    height: 452px;
+    overflow: hidden;
+    transition: all .5s;
+}
+.products-row{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.products:hover{
+    box-shadow: 0 0 16px rgba(0,0,0, .5);
+}
+.products-favorites{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.products-favorites span{
+    color: #909090;
+    font-size: 20px;
+}
+.product-img{
+    height: 200px;
+    width: 100%;
+}
+.products .product-title{
+    font-family: 'opensans-bold';
+    font-size: 14px;
+    color: #000;
+    margin: 30px 0 5px 0;
+    text-transform: uppercase;
+}
+.products .product-desc{
+    font-size: 14px;
+    color: #000;
+    max-height: 60px;
+    overflow: hidden;
+}
+.product-price{
+    font-family: 'opensans-bold';
+    font-size: 18px;
+    color: #d51e08;
+    margin-bottom: 27px;
+}
+.product-bay .btn-default{
+    width: 140px;
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.product-bay{
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.products-sale{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #545454;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    display: table;
+    
+}
+.products-sale span{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;   
+}
+.banner-row{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.banner-row img{
+    margin-bottom: 20px;
+}
+                                                       /*bottom-content section*/
+
+.bottom-content{
+    background: #f5f5f5;
+    padding: 35px 0;
+    border-bottom: 1px solid #9e9e9e;
+}
+.bottom-content h3{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.bottom-content h4{
+    font-family: 'opensans-light';
+    font-size: 18px;
+    margin: 0;
+    font-weight: 300;
+}
+.bottom-content .form-control{
+    height: 55px;
+    width: 100%;
+}
+.bottom-content .btn-default{
+    margin-bottom: 3px;
+    height: 52px;
+    width: 100%;
+    padding: 0 40px;
+    background-color: #e77553;
+    font-size: 18px;
+    font-family: 'opensans-bold';
+    color: #fff;
+    box-shadow: 0px 3px 0px 0px rgba(217,99,64,1);
+    border: none;   
+}
+.bottom-content .btn-default:active{
+    background-color: #e77553;
+    color: #fff;
+    box-shadow:none;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.content, .sidebar{
+    padding-bottom: 40px;
+}
+                                                        /* bottom-slider */
+.bottom-slider{
+    background-color: #fff;
+    padding: 20px 0;
+}
+                                                        /* footer menu */
+.footer-menu{
+    background-color: #343434;
+    color: #c8c8c8;
+    padding-bottom: 50px;
+}
+.footer-menu h4{
+    font-family: 'opensans-bold';
+    font-size: 14.01px;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+.footer-menu ul{
+    padding: 0;
+}
+.footer-menu ul li{
+    list-style: none;
+}
+.footer-menu ul>li>a{
+    color: #c8c8c8;
+}
+
+.footer-menu .sicial-icons a>img{
+    margin: 2px;
+}
+.footer-copyright{
+    background-color: #fff;
+}
+.footer-copyright p{
+    padding-top: 30px;
+    color: #000;  
+}
+.footer-copyright a{
+    float: right;
+    margin:30px 0 30px 5px ;
+}
+
+                                                        /* Large Devises, Wide Screen 1200px */
+@media only screen and (max-width : 1200px){
+    .menu-top .navbar-nav,.main-menu .navbar-nav{
+        float:none !important;
+    }
+    .menu-top .container{
+        padding-left: 10px;
+    }
+    .menu-top .navbar-collapse{
+        padding-left: 0;
+    }
+    .menu-carusel .carousel-caption{
+    left: 20%;
+    }
+    .menu-top .navbar{
+        padding-bottom: 0;
+    }
+    .navbar-nav{
+      margin-bottom: 20px;  
+    }
+    .footer-menu .sicial-icons a>img{
+        display: block;
+        margin: 10px;
+    }
+    .paddbox{
+        margin-bottom: 100px;
+    }
+                                                    /*  меню основное   */
+    
+    .main-menu .navbar-nav{
+        margin-bottom: 0;
+    }
+    .main-menu .navbar-nav > li {
+        float: right !important;
+    }
+    .main-menu .navbar-left{
+        float: right !important;
+    }
+          
+    .sidebar #carousel-2,.sidebar .banner{
+        margin-right: 10px;
+    }
+                              
+                                                    /* заголовок */
+
+    .my-slogan{
+        border-top: 1px solid #cfcfcf;
+        border-bottom: 3px solid #dadada;
+        background-color: #fff;
+        text-align: center;
+        padding: 25px 0;
+    }
+    .my-slogan h1{
+        line-height: 1.5
+        font-size: 25px;
+        color: #000;
+        margin: 0;
+    }               
+}
+
+                                                                /* Medium Devises, Desktops */
+@media only screen and (max-width : 992px){
+    .content{
+        padding-left: 0;
+    }
+    .footer-menu ul > li > a{
+        display: block;
+    }
+    .footer-menu .sicial-icons a > img{
+        display: inline-block;
+    }
+    .pay{
+        display: inline-block;
+        text-align: left;
+    }
+    .pay a{
+        margin: 10px 0 10px 5px;   
+    }
+    .products-row{
+        margin: 30px 0;
+    }
+    .bottom-content h4{
+        padding: 10px 0;
+    }
+    
+     .menu-carusel .item{
+         min-height: 500px;
+     }
+    .menu-top .navbar-nav > li:hover{
+        background-color: #cacaca;
+    }
+    .menu-carusel .carousel-caption{
+    left: 19%;
+    }
+    .menu-carusel .carousel-caption h2{
+        font-size: 40px;
+        font-family: opensans-bold;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .menu-carusel .carousel-caption p{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .menu-carusel .carousel-caption .btn-red{
+        font-size: 17px;
+        padding: 10px 30px;
+        border-radius: 3px;
+    }
+/*основное меню*/
+     .main-menu .navbar-header{
+        float: none !important;
+     }
+     .main-menu .navbar-nav{
+         margin-bottom: 0;
+     }
+     .main-menu .navbar-brand span{
+         
+     }
+     
+     .main-menu .navbar-brand{
+         margin-left: 0;
+     }
+     .main-menu .navbar-collapse > ul{
+         position: absolute;
+         top: 0;
+         right: 15px;
+     }
+     .main-menu .navbar-right{
+         padding-bottom: 10px;
+     }
+     .main-menu .navbar-inverse .navbar-nav > li > a{
+         padding: 13px;
+     }
+                                                                    
+                                                                    
+                                                                      /*   сайдбар   */
+    .widget{
+    padding: 0 20px;
+    border-bottom: 0;
+    }
+        .sidebar{
+    padding: 50px 0 0 0;
+    border-right:0; 
+    overflow: hidden;
+    }
+                                                                /*  сайтбар карусель  */
+    #carousel-2{
+        margin-bottom: 20px;
+    }
+    .sidebar #carousel-2,.sidebar .banner{
+        margin-right: 0;
+    }   
+}
+
+                                                            /* Small Devises, Tablets */
+@media only screen and (max-width : 768px){
+    .content{
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .products{
+        margin-bottom: 25px;
+    } 
+    
+    .banner-box{
+        overflow: hidden;
+    }                            
+    .banner{
+        float: right;
+    }                           
+    .menu-carusel .item{
+        min-height: 400px;
+    } 
+    .menu-carusel .carousel-caption h2 {
+        font-family: opensans-bold;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }                            
+    .menu-carusel .carousel-caption{
+    left: 15%;
+    top: 90px;
+    }
+    .menu-carusel .carousel-caption h2{
+        font-size: 38px;
+        font-family: 'opensans-bold';
+        margin-bottom: 20px;
+    }
+    .menu-carusel .carousel-caption p{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .menu-carusel .carousel-caption .btn-red{
+        font-size: 16px;
+        padding: 8px 20px;
+        border-radius: 3px;
+    }
+    .menu-top .navbar{
+        padding: 0;
+        background-color: #ebebeb;   
+    }                           
+    .main-menu .logo{
+        width: 80px;
+        height: 105px;
+    } 
+    
+    .main-menu .navbar-nav,.main-menu .navbar-nav{
+            float:left!important;
+    }
+    .menu-top .navbar-collapse {
+        padding-left: 20px;
+    }                           
+                                
+                                /*основное меню*/
+     
+     .main-menu .navbar-inverse .container .main-menu-bg .navbar-nav{
+         margin: 0;
+         display: block;
+         width: 100%;
+         text-decoration: none;
+     }
+     .main-menu .navbar-inverse .container .main-menu-bg .navbar-nav > li:hover,
+     .main-menu .navbar-inverse .container .main-menu-bg .navbar-nav > li:active{
+         background-color: #474444;
+         transition: background .2s;   
+     }
+     .main-menu .navbar-brand{
+         margin-left: 0;
+     }
+     .main-menu .navbar-collapse > ul{
+         position: relative;
+         display: block;
+         right: 0;
+     }
+     .main-menu .navbar-right{
+         padding-bottom: 10px;
+     }
+     .main-menu .navbar-inverse .navbar-nav > li > a{
+         display: block;
+         padding: 10px;
+         width: 100%;
+         
+         
+     }
+     .main-menu .navbar-inverse .navbar-nav > li > a:hover{
+         text-decoration: none;
+         z-index: 35;
+     }
+     .main-menu .navbar-nav > li{
+         display: block;
+         float: none !important;
+         padding-left: 120px;   
+     }
+     .main-menu .navbar-collapse{
+         padding: 0;
+     }
+     .main-menu .navbar-left {
+         float: none!important;
+     }
+     .main-menu .navbar-inverse .container .main-menu-bg .navbar-form{
+         box-shadow: none;
+         width: 100%;
+         margin: 0;
+         padding: 0 20%;
+         float: right !important;
+     }                                                              /* заголовок */
+
+        .my-slogan{
+            border-top: 1px solid #cfcfcf;
+            border-bottom: 3px solid #dadada;
+            background-color: #fff;
+            text-align: center;
+            padding: 25px 0;
+        }
+        .my-slogan h1{
+            line-height: 1.5;
+            font-size: 20px;
+            color: #000;
+            margin: 0;
+        }                                                        
+                                                                    /*  сайдбар  */
+        
+        .widget2 {
+                text-align: right;
+            }
+            .widget1 {
+                text-align: left;
+            }                                         
+}
+                                                        /*  630px  */
+@media only screen and (max-width : 630px){
+    .col-xs-6{
+        width: 100%;
+    }
+    .widget2 {
+        text-align: left;
+    }
+    .sidebar #carousel-2,.sidebar .banner{
+        display: inline-block;
+    }
+    
+    .sidebar .col-xs-6{
+        width: 100%;
+    }
+    .banner{
+        float: none;
+    }
+    .paddbox{
+        margin-bottom: 0px;
+    }
+    .footer-menu{
+        text-align: center;
+    }
+    .widget{
+        text-align: center;
+    }
+    
+}
+
+
+                                                                            /* Extra Small Devises, Phones 480px */
+@media only screen and (max-width : 480px){                         
+    .menu-carusel .carousel-caption{
+            left: 15%;
+            top: 70px;
+    }
+                            
+    .main-menu .logo{
+            width: 55px;
+            height: 70px;
+    }
+    .main-menu .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+        
+            margin-left: 5px;
+    }
+    .main-menu .navbar-inverse .container .main-menu-bg .navbar-form{
+           padding: 0 5%; 
+    }                        
+    .my-slogan{
+            border-top: 1px solid #cfcfcf;
+            border-bottom: 3px solid #dadada;
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .my-slogan h1{
+            line-height: 1.3;
+            font-size: 20px;
+            color: #000;
+            margin: 0;
+        }
+}
