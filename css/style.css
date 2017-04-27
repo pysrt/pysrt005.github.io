@@ -141,7 +141,7 @@ h3{
     position: relative;
 }
 .menu-carusel .carousel-control{
-    z-index: 10px;
+    z-index: 10;
 }
 .carousel-indicators-wrap{
     position: absolute;
@@ -605,7 +605,7 @@ h3{
         padding: 25px 0;
     }
     .my-slogan h1{
-        line-height: 1.5
+        line-height: 1.5;
         font-size: 25px;
         color: #000;
         margin: 0;
